@@ -1,0 +1,245 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9faff;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+/* Header */
+.site-header {
+  background: #0b3d91; /* BD Tech Blue */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-header .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.site-header .logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.site-header nav a {
+  color: white;
+  margin-left: 1.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus {
+  color: #ffc107; /* Accent Yellow */
+  outline: none;
+}
+
+/* Footer */
+.site-footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 3rem 1rem 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.site-footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.footer-brand h2 {
+  margin: 0.5rem 0;
+  color: #ffc107;
+}
+
+.footer-links h4,
+.footer-resources h4,
+.footer-newsletter h4,
+.footer-tags h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.footer-links ul,
+.footer-resources ul {
+  list-style: none;
+}
+
+.footer-links ul li,
+.footer-resources ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a,
+.footer-resources ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-resources ul li a:hover {
+  color: #ffc107;
+}
+
+.footer-newsletter p {
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-newsletter input[type="email"] {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer-newsletter button {
+  background: #ffc107;
+  border: none;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background: #e0a800;
+}
+
+/* Tag Cloud */
+.footer-tags .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-tags .tags a {
+  background: #ffc107;
+  color: #1a1a1a;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.footer-tags .tags a:hover {
+  background: #e0a800;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.footer-bottom a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Ads Placeholder */
+.footer-ads {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-ads img {
+  max-width: 150px;
+  margin: 0 10px;
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.footer-ads img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .site-header nav a {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-newsletter form {
+    flex-direction: column;
+  }
+  
+  .footer-newsletter input[type="email"] {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
