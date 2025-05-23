@@ -3,7 +3,7 @@
 
 ---
 
-![MUH Nirob](https://raw.githubusercontent.com/muhnirob25/assets/main/profile_pic.png)  
+![Profile Picture](https://raw.githubusercontent.com/muhnirob24/bdtech/main/assets/images/profile_pic.png)
 
 > **“Welcome! You are now entering the world of MUH Nirob — a story of resilience, innovation, and unshakable hope.”**
 
